@@ -7,11 +7,11 @@
 ul {
   list-style: none;
   text-align: center;
-  margin-top: 80px!important;
+  margin-top: 80px !important;
 }
 
 a {
-  text-decoration: none!important;
+  text-decoration: none !important;
   font-family: poppins, sans-serif;
   font-size: 30px;
   color: #0099d0;
@@ -31,25 +31,25 @@ a {
 }
 
 .nav-list {
-    display: none;
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    left: 0;
-    top: 0;
-    background: #fff;
-    height: 100vh;
-  }
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: #fff;
+  height: 100vh;
+}
 
 #mobile-exit {
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 40px;
-    font-weight: 100;
-    color: #1a2236;
-    margin-left: 20px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 40px;
+  font-weight: 100;
+  color: #1a2236;
+  margin-left: 20px;
 }
 
 .hero-section {
@@ -232,8 +232,8 @@ hr {
   margin-top: 10px;
 }
 
-#more{
-  display:none;
+#more {
+  display: none;
 }
 
 .read-more {

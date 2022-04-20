@@ -17,15 +17,13 @@ nav.addEventListener('click', () => {
 });
 
 // Read more btn
-function ReadMore() {
-    let moreText = document.getElementById("more");
-    let toggle = document.getElementById('toggle');
-  
-    if (moreText.style.display !== "none") {
-        toggle.innerHTML = "MORE"; 
-        moreText.style.display = "none";
-    } else {
-        toggle.innerHTML = "LESS"; 
-        moreText.style.display = "block";
-    }
-  }
+const moreText = document.getElementById('more');
+const toggle = document.getElementById('toggle');
+
+if (moreText.style.display !== 'none') {
+  toggle.innerHTML = 'MORE';
+  moreText.style.display = 'none';
+} else {
+  toggle.innerHTML = 'LESS';
+  moreText.style.display = 'block';
+}
