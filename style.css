@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  display: none;
+}
+
+.hero-section {
+  margin-bottom: 60px;
+}
+
+.primary-cta {
+  display: none;
+}
+
+.headline-img {
+  background-image: url(images/headling-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  height: 137%;
+  z-index: -1;
+}
+
+.font-face {
+  font-family: poppins, sans-serif;
+}
+
+.intro {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #0099d0;
+}
+
+.title {
+  font-weight: bolder;
+  font-size: 35px;
+  background-image: url(images/walkator-klMii3cR9iI-unsplash.jpg);
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.discription {
+  font-size: 16px;
+  margin-top: 30px;
+  border: 2px solid #fff;
+  padding: 20px;
+  color: gray;
+  background: #e0dfe4;
+}
+
+.date {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.location {
+  font-size: 18px;
+}
+
+.program-title {
+  text-align: center;
+  color: #fff;
+  font-family: poppins, sans-serif;
+  font-size: 20px;
+  padding-top: 40px;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  width: 50px;
+  margin: 0 auto !important;
+  color: #0099d0 !important;
+  opacity: 0.99 !important;
+}
+
+.p-cont {
+  margin-bottom: 30px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row !important;
+  background-color: rgba(100, 100, 100, 0.3) !important;
+  align-items: center;
+  border: none !important;
+  border-radius: 0 !important;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.p-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.t1 {
+  font-family: poppins, sans-serif;
+  font-weight: 600;
+  color: #0099d0;
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.program-disc {
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.start-learning {
+  color: #fff;
+  background: #0099d0;
+  font-family: poppins, sans-serif;
+  font-size: 20px;
+  padding: 15px 25px 15px 25px;
+  text-decoration: none;
+}
+
+.button {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.main-program {
+  height: auto;
+}
+
+.program-bg {
+  background-image: url(images/Abstract-Pattern-01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  height: 868px;
+  z-index: -1;
+}
+
+.speakers {
+  margin: 5px 5px 10px 5px;
+  position: relative;
+}
+
+.main-speakers > div.p-cont > p.program-title {
+  color: #000;
+  position: relative;
+}
+
+.speak-cont {
+  background: url(images/circle-02.png) top no-repeat;
+  z-index: -1;
+  position: relative;
+}
+
+.speakers-img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: 10px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.grey-line {
+  margin: 0 !important;
+  color: grey !important;
+  width: 15px;
+}
+
+.box {
+  margin-bottom: 10px;
+}
+
+.speaker-cap {
+  color: #0099d0;
+}
+
+.box1 {
+  margin-top: 10px;
+}
+
+.read-more {
+  border: 1px solid #0099d0;
+  background: #fff;
+  color: #000;
+  font-family: poppins, sans-serif;
+  font-size: 20px;
+  padding: 15px 25px 15px 25px;
+  width: 100%;
+  text-decoration: none;
+  margin-bottom: 40px;
+}
+
+.fa {
+  margin-left: 10px;
+  color: #0099d0;
+}
+
+.partner {
+  background-color: #303030;
+  text-align: center;
+  padding-bottom: 31px;
+}
+
+.partner-imgs img {
+  margin: 10px;
+}
+
+.partner-imgs .absa {
+  width: 55px;
+}
+
+.partner-imgs .vodacom {
+  width: 55px;
+}
+
+.partner-imgs .google {
+  width: 155px;
+}
+
+.partner-imgs .micro {
+  width: 155px;
+}
+
+.partner-imgs .aws {
+  width: 55px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px 15px 25px;
+}
+
+.f-logo {
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 0;
+  margin-right: 50px;
+}
+
+.footer-text {
+  word-wrap: break-word;
+}
+
+@media only screen and (min-width: 768px) {
+  .grid {
+    display: flex;
+    flex-direction: row !important;
+  }
+
+  .card {
+    display: block;
+    flex-direction: column !important;
+  }
+
+  .card-title {
+    display: block;
+  }
+
+  .col-6 {
+    width: 100% !important;
+  }
+
+  .t1 {
+    margin: 0;
+  }
+
+  .program-bg {
+    min-height: 70%;
+    height: auto;
+  }
+
+  .read-button {
+    display: none;
+  }
+
+  .partner-imgs {
+    text-align: center;
+  }
+
+  .partner-imgs .absa {
+    width: 85px;
+  }
+
+  .partner-imgs .vodacom {
+    width: 85px;
+  }
+
+  .partner-imgs .google {
+    width: 255px;
+  }
+
+  .partner-imgs .micro {
+    width: 255px;
+  }
+
+  .partner-imgs .aws {
+    width: 85px;
+  }
+}
