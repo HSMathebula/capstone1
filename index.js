@@ -21,39 +21,39 @@ const moreText = document.getElementById('more');
 const toggle = document.getElementById('toggle');
 
 function ReadMore() {
-    if (moreText.style.display !== 'none') {
-        toggle.innerHTML = 'MORE';
-        moreText.style.display = 'none';
-      } else {
-        toggle.innerHTML = 'LESS';
-        moreText.style.display = 'block';
-      }
+  if (moreText.style.display !== 'none') {
+    toggle.innerHTML = 'MORE';
+    moreText.style.display = 'none';
+  } else {
+    toggle.innerHTML = 'LESS';
+    moreText.style.display = 'block';
+  }
 }
 
 ReadMore();
 
-//dynamic page
+// dynamic page
 const speakersObj1 = [
-    {
-        Image: 'images/speaker1.jpg',
-        name: 'Jack Maphosa',
-        caption: 'I have 20 years of expiriance in web development and 2 years teaching it.',
-        discription: 'I teach javaScript and react all over the world via this platform everyday exept on weekends.'
-    },
+  {
+    Image: 'images/speaker1.jpg',
+    name: 'Jack Maphosa',
+    caption: 'I have 20 years of expirience in web development.',
+    discription: 'I teach javaScript and react all over the world via this platform everyday.',
+  },
 
-    {
-        Image: 'images/speaker1.jpg',
-        name: 'Jack Maphosa',
-        caption: 'I have 20 years of expiriance in web development and 2 years teaching it.',
-        discription: 'I teach javaScript and react all over the world via this platform everyday exept on weekends.'
-    }
+  {
+    Image: 'images/speaker2.jpg',
+    name: 'Ntombi Zulu',
+    caption: 'I enjoy solving the world problems with code',
+    discription: 'I specialize in Ruby On Rails',
+  },
 ];
 
 const section = document.querySelector('#dynamic-page');
 speakersObj1.forEach((speaker1) => {
-    const div = document.createElement('div');
-    div.className = 'speak';
-    div.innerHTML = `
+  const div = document.createElement('div');
+  div.className = 'speak';
+  div.innerHTML = `
         <img src="${speaker1.Image}" alt="first speaker">
 
         <div>
@@ -68,10 +68,10 @@ speakersObj1.forEach((speaker1) => {
 });
 
 speakersObj1.forEach((speaker1) => {
-    window.addEventListener('load', () => {
-        const popUpSection = document.createElement('section');
-        popUpSection.classList.add('col-md-6', 'col-lg-6');
-        popUpSection.innerHTML = `
+  window.addEventListener('load', () => {
+    const popUpSection = document.createElement('section');
+    popUpSection.classList.add('col-md-6', 'col-lg-6');
+    popUpSection.innerHTML = `
             <div class="speakers">
                 <div class="speak-cont col-4">
                     <img src="${speaker1.Image}" alt="first speaker" class="speakers-img">
@@ -89,45 +89,45 @@ speakersObj1.forEach((speaker1) => {
             </div>
         `;
 
-        section.appendChild(popUpSection);
-    });
+    section.appendChild(popUpSection);
+  });
 });
 
 const speakersObjMore = [
-    {
-        Image: 'images/speaker1.jpg',
-        name: 'Jack Maphosa',
-        caption: 'I have 20 years of expiriance in web development and 2 years teaching it.',
-        discription: 'I teach javaScript and react all over the world via this platform everyday exept on weekends.'
-    },
+  {
+    Image: 'images/speaker3.jpg',
+    name: 'Thabo Zuma',
+    caption: 'I have experience in UI and UX design',
+    discription: 'I teach Figma and XD',
+  },
 
-    {
-        Image: 'images/speaker1.jpg',
-        name: 'Jack Maphosa',
-        caption: 'I have 20 years of expiriance in web development and 2 years teaching it.',
-        discription: 'I teach javaScript and react all over the world via this platform everyday exept on weekends.'
-    },
+  {
+    Image: 'images/speaker4.jpg',
+    name: 'Musa Shai',
+    caption: 'Databases are my language that I speak fluently',
+    discription: 'I teach AWS and MongoDB',
+  },
 
-    {
-        Image: 'images/speaker1.jpg',
-        name: 'Jack Maphosa',
-        caption: 'I have 20 years of expiriance in web development and 2 years teaching it.',
-        discription: 'I teach javaScript and react all over the world via this platform everyday exept on weekends.'
-    },
+  {
+    Image: 'images/speaker5.jpg',
+    name: 'Themba Tau',
+    caption: 'My passion lies in Mobile Apps',
+    discription: 'I teach Android, Kotlin and Java',
+  },
 
-    {
-        Image: 'images/speaker1.jpg',
-        name: 'Jack Maphosa',
-        caption: 'I have 20 years of expiriance in web development and 2 years teaching it.',
-        discription: 'I teach javaScript and react all over the world via this platform everyday exept on weekends.'
-    }
+  {
+    Image: 'images/speaker6.jpg',
+    name: 'Lebo Boa',
+    caption: 'I make the World wide web beautiful daily',
+    discription: 'I have mastered HTML, CSS and Javascript',
+  },
 ];
 
 const section2 = document.querySelector('#more');
 speakersObjMore.forEach((speaker1) => {
-    const div = document.createElement('div');
-    div.className = 'speak';
-    div.innerHTML = `
+  const div = document.createElement('div');
+  div.className = 'speak';
+  div.innerHTML = `
         <img src="${speaker1.Image}" alt="first speaker">
 
         <div>
@@ -142,10 +142,10 @@ speakersObjMore.forEach((speaker1) => {
 });
 
 speakersObjMore.forEach((speaker1) => {
-    window.addEventListener('load', () => {
-        const popUpSection = document.createElement('section');
-        popUpSection.classList.add('col-md-6', 'col-lg-6');
-        popUpSection.innerHTML = `
+  window.addEventListener('load', () => {
+    const popUpSection = document.createElement('section');
+    popUpSection.classList.add('col-md-6', 'col-lg-6');
+    popUpSection.innerHTML = `
             <div class="speakers">
                 <div class="speak-cont col-4">
                     <img src="${speaker1.Image}" alt="first speaker" class="speakers-img">
@@ -163,6 +163,6 @@ speakersObjMore.forEach((speaker1) => {
             </div>
         `;
 
-        section2.appendChild(popUpSection);
-    });
+    section2.appendChild(popUpSection);
+  });
 });

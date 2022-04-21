@@ -10,11 +10,25 @@ ul {
   margin-top: 80px !important;
 }
 
+ul.p-cta {
+  color: #0099d0 !important;
+}
+
 a {
   text-decoration: none !important;
+}
+
+.mobile-menu {
+  margin-top: 20px;
+}
+
+.secondary-cta {
+  display: none;
+}
+
+.p-cta {
   font-family: poppins, sans-serif;
   font-size: 30px;
-  color: #0099d0;
   font-weight: 700;
 }
 
@@ -33,7 +47,7 @@ a {
 .nav-list {
   display: none;
   position: fixed;
-  z-index: 999;
+  z-index: 1;
   width: 100%;
   left: 0;
   top: 0;
@@ -140,6 +154,10 @@ hr {
   padding: 10px;
 }
 
+.whole-program {
+  display: none;
+}
+
 .p-icon {
   width: 50px;
   height: 50px;
@@ -160,7 +178,7 @@ hr {
 }
 
 .start-learning {
-  color: #fff;
+  color: #fff !important;
   background: #0099d0;
   font-family: poppins, sans-serif;
   font-size: 20px;
@@ -175,8 +193,7 @@ hr {
 }
 
 .main-program {
-  height: 870px;
-  height: auto;
+  height: 770px !important;
 }
 
 .program-bg {
@@ -186,7 +203,7 @@ hr {
   position: absolute;
   min-height: 100%;
   min-width: 100%;
-  height: 868px;
+  height: 770px;
   z-index: -1;
 }
 
@@ -256,7 +273,7 @@ hr {
 
 .fa {
   margin-left: 10px;
-  color: #0099d0;
+  color: red;
 }
 
 .partner {
@@ -308,8 +325,127 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
+  .hero-section {
+    margin-bottom: 0;
+  }
+
+  .logo {
+    display: flex;
+    margin-bottom: 0;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .secondary-cta {
+    display: flex;
+    background: #303030;
+    padding: 10px 0 10px 0;
+  }
+
+  .second-cta {
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    justify-content: right;
+  }
+
+  .s-list {
+    margin-right: 10px;
+  }
+
+  header {
+    background: #fff;
+  }
+
+  .p-cta {
+    font-family: poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+
+  a {
+    color: rgb(51, 51, 51) !important;
+  }
+
+  .secondary-cta ul li a {
+    color: #fff !important;
+  }
+
+  ul li.p-cta.call2action a {
+    color: #fff !important;
+  }
+
+  .nav-list > ul li a:hover,
+  .nav-list > ul li a:active {
+    font-weight: 600;
+    color: #0099d0 !important;
+  }
+
+  .nav-list ul li.p-cta.call2action a:hover {
+    background: #fff;
+    color: #0099d0 !important;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
   #more {
-    display: flex!important;
+    display: flex !important;
+  }
+
+  ul {
+    margin-top: unset !important;
+  }
+
+  .nav-list {
+    display: flex;
+    width: 100%;
+    background: unset;
+    height: 10vh;
+    position: unset;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .nav-list ul {
+    display: flex;
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+    align-items: center;
+  }
+
+  .call2action {
+    display: flex;
+    background: #0099d0;
+    padding: 10px;
+  }
+
+  #mobile-exit {
+    display: none;
+  }
+
+  .intro {
+    font-size: 30px;
+  }
+
+  .headline {
+    margin-top: 50px;
+  }
+
+  .title {
+    font-size: 50px;
+    width: 80%;
+  }
+
+  .discription {
+    width: 80%;
   }
 
   .col-8 {
@@ -320,11 +456,6 @@ footer {
   .grid {
     display: flex;
     flex-direction: row !important;
-  }
-
-  .card {
-    display: block;
-    flex-direction: column !important;
   }
 
   .card-title {
@@ -342,6 +473,24 @@ footer {
   .program-bg {
     min-height: 70%;
     height: auto;
+  }
+
+  .card {
+    text-align: center;
+    display: block;
+    flex-direction: column !important;
+  }
+
+  .start-learning {
+    display: none;
+  }
+
+  .whole-program {
+    display: block;
+    color: rgb(187, 187, 187);
+    text-decoration: underline;
+    font-weight: 600;
+    text-align: center;
   }
 
   .read-button {
